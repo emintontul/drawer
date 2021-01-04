@@ -1,0 +1,132 @@
+
+.met-drawer {
+    position: fixed;
+    z-index: 99999;
+    background: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 35vw;
+    min-width: 700px;
+    overflow: scroll;
+  }
+  .met-drawer .met-drawer-body {
+    padding: 50px;
+  }
+  .met-drawer .met-drawer-body .drawer-heading {
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  .met-drawer .met-drawer-body .drawer-heading i {
+    font-size: 35px;
+    color: #788194;
+    cursor: pointer;
+  }
+  .met-drawer .met-drawer-body .drawer-heading .btn {
+    display: inline-block;
+  }
+  .met-drawer .met-drawer-body .field-container {
+    padding: 30px 0;
+  }
+  .met-drawer .met-drawer-body .field-container .form-group label {
+    color: #788194;
+  }
+  .met-drawer .met-drawer-body .field-container h3 {
+    font-size: 15px;
+    color: #788194;
+    margin-bottom: 25px;
+  }
+  .met-drawer.active {
+    right: -700px;
+    -webkit-animation: slideInRight 0.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slideInRight 0.5s forwards;
+    animation-delay: 0s;
+  }
+  .met-drawer:not(.active) {
+    right: 0;
+    -webkit-animation: slideInLeft 0.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slideInLeft 0.5s forwards;
+    animation-delay: 0s;
+  }
+  
+  @-webkit-keyframes slideInRight {
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes slideInRight {
+    100% {
+      right: 0;
+    }
+  }
+  @-webkit-keyframes slideInLeft {
+    100% {
+      right: -700px;
+    }
+  }
+  @keyframes slideInLeft {
+    100% {
+      right: -700px;
+    }
+  }
+  .drawer-mask {
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  @media screen and (max-width: 999px) {
+    .met-drawer {
+      position: fixed !important;
+      z-index: 99999;
+      background: #fff;
+      top: 10px !important;
+      left: 100vw !important;
+      right: -100vw !important;
+      bottom: 10px !important;
+      width: calc(100vw - 20px)  !important;
+      height: calc(100vh - 20px)  !important;
+      max-width: calc(100vw - 20px)  !important;
+      min-width: calc(100vw - 20px)  !important;
+      .met-drawer-body{
+        width: 100%;
+      }
+      
+    }
+    .drawer-mask {
+      position: fixed;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.6);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .met-drawer.active {
+      right: 10px  !important;
+      left:10px  !important;
+      -webkit-animation: slideInRight 0.5s forwards;
+      -webkit-animation-delay: 0s;
+      animation: slideInRight 0.5s forwards;
+      animation-delay: 0s;
+      display:flex;
+      align-items:center;
+    }
+    .met-drawer:not(.active) {
+      right: -100vw  !important;
+      left: 100vw  !important;
+      -webkit-animation: slideInLeft 0.5s forwards;
+      -webkit-animation-delay: 0s;
+      animation: slideInLeft 0.5s forwards;
+      animation-delay: 0s;
+    }
+  }
