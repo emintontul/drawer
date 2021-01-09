@@ -9,32 +9,34 @@
     width: 35vw;
     min-width: 700px;
     overflow: scroll;
-  }
-  .met-drawer .met-drawer-body {
     padding: 50px;
   }
-  .met-drawer .met-drawer-body .drawer-heading {
+  .met-drawer .drawer-heading {
     border-bottom: 1px solid #f1f1f1;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-bottom: 15px;
   }
-  .met-drawer .met-drawer-body .drawer-heading i {
-    font-size: 35px;
-    color: #788194;
+  .met-drawer .drawer-heading .drawer-title{
+    flex: auto;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .met-drawer .drawer-heading .toggle-right svg {
+    height: 35px;
+    fill: #788194;
     cursor: pointer;
   }
-  .met-drawer .met-drawer-body .drawer-heading .btn {
+  .met-drawer .drawer-heading .btn {
     display: inline-block;
   }
-  .met-drawer .met-drawer-body .field-container {
+  .met-drawer .field-container {
     padding: 30px 0;
   }
-  .met-drawer .met-drawer-body .field-container .form-group label {
+  .met-drawer .field-container .form-group label {
     color: #788194;
   }
-  .met-drawer .met-drawer-body .field-container h3 {
+  .met-drawer .field-container h3 {
     font-size: 15px;
     color: #788194;
     margin-bottom: 25px;
@@ -97,9 +99,6 @@
       height: calc(100vh - 20px)  !important;
       max-width: calc(100vw - 20px)  !important;
       min-width: calc(100vw - 20px)  !important;
-      .met-drawer-body{
-        width: 100%;
-      }
       
     }
     .drawer-mask {

@@ -6,6 +6,7 @@ import { METDrawerComponent } from './drawer.component';
     CommonModule
   ],
   declarations: [METDrawerComponent],
-  exports: [METDrawerComponent]
+  exports: [METDrawerComponent],
+  entryComponents: [METDrawerComponent],
 })
 export class MetDrawerModule { }

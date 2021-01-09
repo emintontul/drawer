@@ -3,6 +3,9 @@
   "rulesDirectory": [
     "codelyzer"
   ],
+  "paths": {
+    "drawer": ["dist/drawer"]
+  },
   "rules": {
     "align": {
       "options": [
