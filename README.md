@@ -1,7 +1,8 @@
 # Drawer
 
 This is a basic drawer component for angular.
-
+## Demo
+![](https://www.emintontul.com/demo/drawer/drawer.gif)
 ## Installation
 
 ```bash
