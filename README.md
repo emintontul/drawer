@@ -19,7 +19,7 @@ import { MetDrawerModule } from '@emintontul/drawer';
     AppComponent
   ],
   imports: [
-    DragScrollModule,
+    MetDrawerModule,
     ...
   ],
   providers: [],
@@ -30,7 +30,7 @@ export class AppModule {
 }
 
 ```
-Add the `drag-scroll` attribute to a scrollable element:
+Add the `met-drawer` attribute:
 ```typescript
 @Component({
   selector: 'sample',
