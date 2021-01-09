@@ -48,7 +48,7 @@ import { Button, MetDrawerService } from '@emintontul/drawer';
 class SampleDrawer {
   isDrawerActive: boolean = false;
   buttonArray: Button[] = new Array<Button>();
-  constructor(private drawerService: MetDrawerService){
+  constructor(private drawer: MetDrawerService){
     this.buttonArray.push({text: "Save", class: "btn btn-primary", callFunction: this.someFunction});
   }
   showDrawer(){
